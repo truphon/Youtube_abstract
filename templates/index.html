@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+	"http://www.w3.org/TR/html4/loose.dtd">
+<html lang="ja">
+	<head>
+    <meta charset="UTF-8">
+		<title>Youtube_abstract</title>
+	</head>
+	<body>
+        <h1>Youtubeの動画の要約を表示する</h1>
+        <p>以下のボックスに要約したい動画のURLをコピーして「要約する」ボタンを押してね！</p>
+        <div class="input_space">
+          <form method="POST" action="/transcript">
+            <label>URL:</label>
+            <input name="URL" placeholder="動画URLを入力"></input>
+            <button type="submit">要約する</button>
+          </form>
+        </div>
+        </br>
+        <div class="output_space">
+            <p>以下に要約した結果を表示するよ！</p>
+            <output name="abstract" style ="background:#FCC;">{{abstract}}</output>
+        </div>
+
+
+	</body>
+</html>
